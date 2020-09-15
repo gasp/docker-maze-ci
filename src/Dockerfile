@@ -9,6 +9,4 @@ RUN ln -s /root/.pyenv/versions/3.7.2/bin/python /usr/bin/python
 RUN ln -s /root/.pyenv/versions/3.7.2/bin/pip /usr/bin/pip
 RUN ln -s /root/.ebcli-virtual-env/executables/eb /usr/bin/eb
 
-COPY ./entrypoint.sh /entrypoint.sh
-
-CMD ["bash", "/entrypoint.sh"]
+CMD ["bash"]
